@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<article class="post">
+    <div class="post-content">
+       {{ content }}
+       <div id="nanoGallery1"></div>
+       <script>
+          $(document).ready(function () { 
+            jQuery("#nanoGallery1").nanoGallery({ 
+              kind: 'flickr', 
+              userID: '144974887@N07', 
+              photoset: 'none', 
+              photoSorting: 'random', 
+              thumbnailWidth: 300, 
+              thumbnailHeight: 'auto', 
+              colorScheme: 'none', 
+              maxItemsPerLine: 4, 
+              thumbnailHoverEffect: [{ name: 'labelAppear75', duration: 300 }], 
+              theme: 'light', 
+              thumbnailGutterWidth: 5, 
+              thumbnailGutterHeight: 5, 
+              i18n: { 
+                thumbnailImageDescription: 'View Photo', 
+                thumbnailAlbumDescription: 'Open Album' }, 
+                thumbnailLabel: { display: true, position: 'overImageOnMiddle', align: 'center', titleMaxLength: 20, hideIcons: true 
+              } 
+            }); 
+          });
+       </script>
+    </div>
+ </article>

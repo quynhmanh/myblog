@@ -1,0 +1,59 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+.fa-home:before {
+    content: "\f015";
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.site-nav {
+    float: left;
+    margin-left: 30px;
+    line-height: 63px;
+}
+
+
+/* SHIFT */
+nav.site-nav a {
+    position:relative;
+    z-index: 1;
+    padding: 5px 10px;
+}
+nav.site-nav a:hover {
+color: #91640F;
+}
+nav.site-nav a:after {
+display: block;
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+margin: auto;
+width: 100%;
+height: 1px;
+content: '.';
+color: transparent;
+background: #F1C40F;
+visibility: none;
+opacity: 0;
+z-index: -1;
+}
+nav.site-nav a:hover:after {
+opacity: 1;
+visibility: visible;
+height: 100%;
+}
+  
+  

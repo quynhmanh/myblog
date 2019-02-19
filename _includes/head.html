@@ -1,0 +1,41 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  
+  {%- feed_meta -%}
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}
+
+  <!-- #################################################################################################################### -->
+  <!-- jQuery                                                                                                               -->
+  <!--                                                                                                                      -->
+  <script type="text/javascript" src="{{ base.url | prepend: site.url }}/assets/jquery-1.7.1.min.js"></script>
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>  -->
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>  -->
+  <!-- #################################################################################################################### -->
+
+
+  <!-- #################################################################################################################### -->
+  <!-- nanoGALLERY CSS files                                                                                                -->
+  <!-- only include the css file corresponding to the selected theme                                                        -->
+  <!-- include 'nanogallery.css' if no theme is specified                                                                   -->
+  <!--                                                                                                                      -->
+	<!-- nanoGALLERY - default theme css file                                                                                 -->
+	<link href="{{ base.url | prepend: site.url }}/assets/nanogallery.css" rel="stylesheet" type="text/css">
+	<!-- nanoGALLERY - css file for the theme 'clean'                                                                         -->
+	<link href="{{ base.url | prepend: site.url }}/assets/nanogallery_clean.css" rel="stylesheet" type="text/css">
+	<!-- nanoGALLERY - css file for the theme 'light'                                                                         -->
+	<link href="{{ base.url | prepend: site.url }}/assets/nanogallery_light.css" rel="stylesheet" type="text/css">
+  <!-- #################################################################################################################### -->
+
+  <!-- #################################################################################################################### -->
+	<!-- nanoGALLERY javascript                                                                                               -->
+  <!--                                                                                                                      -->
+	<script type="text/javascript" src="{{ base.url | prepend: site.url }}/assets/jquery.nanogallery.js"></script>
+  <!--                                                                                                                      -->
+  <!-- #################################################################################################################### -->
+</head>
